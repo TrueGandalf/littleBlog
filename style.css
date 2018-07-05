@@ -9,3 +9,9 @@
 	visibility: hidden;
 	height: 0;
 }
+
+header {
+	background-color: #01FF70;
+	padding: 20px;
+	margin-bottom: 20px;
+}
