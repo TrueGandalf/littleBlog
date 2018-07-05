@@ -20,8 +20,10 @@ header {
 	float: left;
 }
 
-.social-icons {
+.social-icons,
+.search-icons {
 	float: right;
+	margin: 5px;
 }
 
 main {
@@ -44,4 +46,8 @@ footer {
 	padding: 20px;
 	margin-top: 20px;
 	color: white;
+}
+
+a {
+	text-decoration: none;
 }
