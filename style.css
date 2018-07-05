@@ -21,7 +21,8 @@ header {
 }
 
 .social-icons,
-.search-icons {
+.search-icons,
+.nav {
 	float: right;
 	margin: 5px;
 }
@@ -50,4 +51,32 @@ footer {
 
 a {
 	text-decoration: none;
+}
+
+ul.nav{
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.nav li { 
+    display: inline; 
+}
+
+ul.nav a {
+    display: inline-block;
+    width: 10em;
+    /*padding:10px;*/
+    background-color: rgba(20,20,20,0);/*#f4f4f4*/
+    border: 1px dashed #333;
+    text-decoration: none;
+    color: black;/*333*/
+    font-weight:bold;
+    text-align: center;
+    /*opacity: 0.5;*/
+}
+
+ul.nav a:hover{
+    background-color: #333;
+    color: #f4f4f4;
 }
