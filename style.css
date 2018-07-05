@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+
+header {
+	background-color: #01FF70;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.logo {
+	float: left;
+}
+
+.social-icons {
+	float: right;
+}
+
+main {
+	float: left;
+	background-color: #FF4136;
+	width: calc(100% - 320px);
+	padding: 20px;
+}
+
+aside {
+	float: right;
+	background-color: #FFDC00;
+	width: 300px;
+	padding: 20px;
+	text-align: right;
+}
+
+footer {
+	background-color: #111111;
+	padding: 20px;
+	margin-top: 20px;
+	color: white;
+}
