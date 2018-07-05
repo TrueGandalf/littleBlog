@@ -15,3 +15,18 @@ header {
 	padding: 20px;
 	margin-bottom: 20px;
 }
+
+.logo {
+	float: right;
+}
+
+.navigation {
+	float: right;
+}
+
+.main {
+	float: left;
+	background-color: #FF4136;
+	width: calc(100% - 320px);
+	padding: 20px;
+}
