@@ -27,6 +27,19 @@ header {
 	margin: 5px;
 }
 
+.visible-icons:hover/*.search-icons a:hover*/ {
+	display: none;
+}
+
+.hidden-icons {
+	/*display: content;*/
+	display: relative;
+}
+
+.hidden-icons:hover {
+	display: content;
+}
+
 main {
 	float: left;
 	background-color: #FF4136;
