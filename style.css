@@ -45,7 +45,7 @@ header {
     width: 30px;
     height: 30px;    
     float: right;
-	margin: 5px;	
+	/*margin: 5px;*/	
 }
 
 .facebook {
@@ -60,7 +60,37 @@ header {
 .twitter:hover {
 	background: url(imgs/twitter2.svg)  no-repeat 50% 50%;
 }
+.instagram {
+	background: url(imgs/instagram.svg)  no-repeat 50% 50%;
+}
+.instagram:hover {
+	background: url(imgs/instagram2.svg)  no-repeat 50% 50%;
+}
+.linkedin {
+	background: url(imgs/linkedin.svg)  no-repeat 50% 50%;
+}
+.linkedin:hover {
+	background: url(imgs/linkedin2.svg)  no-repeat 50% 50%;
+}
+.youtube {
+	background: url(imgs/youtube.svg)  no-repeat 50% 50%;
+}
+.youtube:hover {
+	background: url(imgs/youtube2.svg)  no-repeat 50% 50%;
+}
 
+.google_plus {
+	background: url(imgs/google_plus.svg)  no-repeat 50% 50%;
+}
+.google_plus:hover {
+	background: url(imgs/google_plus2.svg)  no-repeat 50% 50%;
+}
+.telegram {
+	background: url(imgs/telegram.svg)  no-repeat 50% 50%;
+}
+.telegram:hover {
+	background: url(imgs/telegram2.svg)  no-repeat 50% 50%;
+}
 /*.hidden-icons {
 	display: content;
 	display: relative;
