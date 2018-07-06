@@ -111,7 +111,7 @@ header {
 main {
 	float: left;
 	background-color: #F0F0F0;
-	width: calc(100% - 320px);
+	width: calc(100% - 120px);
 	padding: 20px;
 }
 
@@ -124,7 +124,7 @@ main {
 }
 
 .post {
-  width: 300px;
+  /*width: 300px;*/
   box-shadow: 0 0 3px 1px #dddddd;
 }
 
@@ -165,7 +165,7 @@ main {
 aside {
 	float: right;
 	background-color: #FFDC00;
-	width: 300px;
+	width: 100px;
 	padding: 20px;
 	text-align: right;
 }
