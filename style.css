@@ -111,7 +111,7 @@ header {
 main {
 	float: left;
 	background-color: #F0F0F0;
-	width: calc(100% - 120px);
+	width: calc(100% - 220px);
 	padding: 20px;
 }
 
@@ -216,10 +216,26 @@ img.robot-arm{
 
 aside {
 	float: right;
-	background-color: #FFDC00;
-	width: 100px;
-	padding: 20px;
+	background-color: #888;
+	width: 220px;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: right;
+	/*display: grid;*/
+	font-size: 18px;
+  	font-weight: normal;
+  	margin-bottom: 5px;
+  	text-align: center;
+}
+
+img.photo {
+	display: block;
+	width: 200px;
+	border-radius: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
 }
 
 footer {
