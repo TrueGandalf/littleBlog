@@ -17,12 +17,88 @@ header {
 }
 
 .logo {
-	float: left;
+	float: left}
+
+.social-icons,
+.search-icons,
+.nav {
+	float: right;
+	margin: 5px;
 }
 
-.social-icons {
-	float: right;
+.search-icon {
+	background: url(imgs/search.svg) no-repeat 50% 50%;
+	display: block;
+    width: 50px;
+    height: 50px;
+    /*border-image-width: 0px;
+    border: none !important;*/
 }
+
+.search-icon:hover {
+	/*display: none;*/
+	background: url(imgs/search2.svg)  no-repeat 50% 50%;
+}
+
+.social-icon {
+	display: block;
+    width: 30px;
+    height: 30px;    
+    float: right;
+	/*margin: 5px;*/	
+}
+
+.facebook {
+	background: url(imgs/facebook.svg)  no-repeat 50% 50%;
+}
+.facebook:hover {
+	background: url(imgs/facebook2.svg)  no-repeat 50% 50%;
+}
+.twitter {
+	background: url(imgs/twitter.svg)  no-repeat 50% 50%;
+}
+.twitter:hover {
+	background: url(imgs/twitter2.svg)  no-repeat 50% 50%;
+}
+.instagram {
+	background: url(imgs/instagram.svg)  no-repeat 50% 50%;
+}
+.instagram:hover {
+	background: url(imgs/instagram2.svg)  no-repeat 50% 50%;
+}
+.linkedin {
+	background: url(imgs/linkedin.svg)  no-repeat 50% 50%;
+}
+.linkedin:hover {
+	background: url(imgs/linkedin2.svg)  no-repeat 50% 50%;
+}
+.youtube {
+	background: url(imgs/youtube.svg)  no-repeat 50% 50%;
+}
+.youtube:hover {
+	background: url(imgs/youtube2.svg)  no-repeat 50% 50%;
+}
+
+.google_plus {
+	background: url(imgs/google_plus.svg)  no-repeat 50% 50%;
+}
+.google_plus:hover {
+	background: url(imgs/google_plus2.svg)  no-repeat 50% 50%;
+}
+.telegram {
+	background: url(imgs/telegram.svg)  no-repeat 50% 50%;
+}
+.telegram:hover {
+	background: url(imgs/telegram2.svg)  no-repeat 50% 50%;
+}
+/*.hidden-icons {
+	display: content;
+	display: relative;
+}*/
+
+/*.hidden-icons:hover {
+	display: content;
+}*/
 
 main {
 	float: left;
@@ -44,4 +120,36 @@ footer {
 	padding: 20px;
 	margin-top: 20px;
 	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul.nav{
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.nav li { 
+    display: inline; 
+}
+
+ul.nav a {
+    display: inline-block;
+    width: 10em;
+    /*padding:10px;*/
+    background-color: rgba(20,20,20,0);/*#f4f4f4*/
+    border: 1px dashed #333;
+    text-decoration: none;
+    color: black;/*333*/
+    font-weight:bold;
+    text-align: center;
+    /*opacity: 0.5;*/
+}
+
+ul.nav a:hover{
+    background-color: #333;
+    color: #f4f4f4;
 }
