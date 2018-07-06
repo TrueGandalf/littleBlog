@@ -145,27 +145,30 @@ main {
   opacity: 0;
 } 
 
-.for-logo {
+/*.for-logo {
 	float: left;
 	width: 100px;
   	overflow:hidden;
 }
 .logo:hover{
 	width: 20px;
-}
+}*/
 .post-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   border-radius: 5px;
-  max-width: 300px;
-  overflow:hidden;
+  width: 300px;/*with max-width zooming doesnt work for all exept first gif*/
+  overflow:hidden;/*doesnt work at the moment with my zooming properly (at all)*/
   z-index: 10;
+  transition: 1s;
 }
 
 .post-img:hover{
-	width: 10000px;
+	width: 350px;
+  transition: 1s;
+
 }
 
 img.animated-gif{
