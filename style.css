@@ -237,6 +237,25 @@ img.photo {
 	margin-right: auto;
 	margin-top: auto;
 }
+.author-social-icons a {
+	display: inline-block;
+    width: 30px;
+    height: 30px;    
+    /*float: right;*/
+	/*margin: 5px;*/	
+}
+.author-social-icons .linkedin {
+	background: url(imgs/linkedin2.svg)  no-repeat 50% 50%;	
+}
+.author-social-icons .linkedin:hover {
+	background: url(imgs/linkedin.svg)  no-repeat 50% 50%;
+}
+.author-social-icons .facebook {
+	background: url(imgs/facebook2.svg)  no-repeat 50% 50%;
+}
+.author-social-icons .facebook:hover {	
+	background: url(imgs/facebook.svg)  no-repeat 50% 50%;
+}
 
 footer {
 	background-color: #111111;
