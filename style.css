@@ -2,6 +2,14 @@
 	box-sizing: border-box;
 }
 
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #515151;
+}
+
+
 .clearfix:after {
 	content: ".";
 	display: block;
@@ -11,7 +19,7 @@
 }
 
 header {
-	background-color: #01FF70;
+	background-color: grey;
 	padding: 20px;
 	margin-bottom: 20px;
 }
@@ -102,15 +110,97 @@ header {
 
 main {
 	float: left;
-	background-color: #FF4136;
-	width: calc(100% - 320px);
+	background-color: #F0F0F0;
+	width: calc(100% - 120px);
 	padding: 20px;
+}
+
+.container {
+  /*border: solid 1px red;*/
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+  /*justify-content: center;*/
+}
+
+.post {
+  /*width: 300px;*/
+  box-shadow: 0 0 9px 3px #dddddd;
+  border-radius: 15px;
+  position:relative;
+
+}
+
+.as-link { 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
+
+  /* fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+  background-image: url('empty.gif');
+  /*z-index:0;*/
+  opacity: 0;
+} 
+
+.post-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+img.animated-gif{
+  width: 250px;
+  height: auto;
+}
+img.robot-arm{
+  width: 300px;
+  height: auto;
+}
+
+.post-info {
+	margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.post-description {
+  margin-bottom: 10px;
+}
+
+.post-author {
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.post-statistic-wrp {
+  color: gray;
+  padding-top: 10px;
+  border-top: solid 1px #ededed;
+}
+
+.post:hover * {
+  background: #444;
+  color: white;
 }
 
 aside {
 	float: right;
 	background-color: #FFDC00;
-	width: 300px;
+	width: 100px;
 	padding: 20px;
 	text-align: right;
 }
