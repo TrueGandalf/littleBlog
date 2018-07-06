@@ -138,8 +138,15 @@ main {
   border-radius: 5px;
 }
 
+img.animated-gif{
+  width: 250px;
+  height: auto;
+}
+
 .post-info {
+	margin-top: 5px;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .post-title {
