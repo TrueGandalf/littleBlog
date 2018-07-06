@@ -17,8 +17,7 @@ header {
 }
 
 .logo {
-	float: left;
-}
+	float: left}
 
 .social-icons,
 .search-icons,
@@ -27,18 +26,49 @@ header {
 	margin: 5px;
 }
 
-.visible-icons:hover/*.search-icons a:hover*/ {
-	display: none;
+.search-icon {
+	background: url(imgs/search.svg) no-repeat 50% 50%;
+	display: block;
+    width: 50px;
+    height: 50px;
+    /*border-image-width: 0px;
+    border: none !important;*/
 }
 
-.hidden-icons {
-	/*display: content;*/
-	display: relative;
+.search-icon:hover {
+	/*display: none;*/
+	background: url(imgs/search2.svg)  no-repeat 50% 50%;
 }
 
-.hidden-icons:hover {
+.social-icon {
+	display: block;
+    width: 30px;
+    height: 30px;    
+    float: right;
+	margin: 5px;	
+}
+
+.facebook {
+	background: url(imgs/facebook.svg)  no-repeat 50% 50%;
+}
+.facebook:hover {
+	background: url(imgs/facebook2.svg)  no-repeat 50% 50%;
+}
+.twitter {
+	background: url(imgs/twitter.svg)  no-repeat 50% 50%;
+}
+.twitter:hover {
+	background: url(imgs/twitter2.svg)  no-repeat 50% 50%;
+}
+
+/*.hidden-icons {
 	display: content;
-}
+	display: relative;
+}*/
+
+/*.hidden-icons:hover {
+	display: content;
+}*/
 
 main {
 	float: left;
