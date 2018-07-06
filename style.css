@@ -142,6 +142,10 @@ img.animated-gif{
   width: 250px;
   height: auto;
 }
+img.robot-arm{
+  width: 300px;
+  height: auto;
+}
 
 .post-info {
 	margin-top: 5px;
