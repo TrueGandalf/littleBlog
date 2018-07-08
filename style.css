@@ -19,7 +19,7 @@ body {
 }
 
 header {
-	background-color: grey;
+	background-color: #AAA;
 	padding: 20px;
 	margin-bottom: 20px;
 }
@@ -111,7 +111,7 @@ header {
 main {
 	float: left;
 	background-color: #F0F0F0;
-	width: calc(100% - 120px);
+	width: calc(100% - 300px);
 	padding: 20px;
 }
 
@@ -127,8 +127,6 @@ main {
   /*width: 300px;*/
   box-shadow: 0 0 9px 3px #dddddd;
   border-radius: 15px;
-  position:relative;
-
 }
 
 .as-link { 
@@ -142,18 +140,35 @@ main {
 
   /* fixes overlap error in IE7/8, 
      make sure you have an empty gif */
-  background-image: url('empty.gif');
+  background-image: url('imgs/empty.gif');
   /*z-index:0;*/
   opacity: 0;
 } 
 
+/*.for-logo {
+	float: left;
+	width: 100px;
+  	overflow:hidden;
+}
+.logo:hover{
+	width: 20px;
+}*/
 .post-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   border-radius: 5px;
-  max-width: 300px;
+  width: 300px;/*with max-width zooming doesnt work for all exept first gif*/
+  overflow:hidden;/*doesnt work at the moment with my zooming properly (at all)*/
+  z-index: 10;
+  transition: 1s;
+}
+
+.post-img:hover{
+	width: 350px;
+  transition: 1s;
+
 }
 
 img.animated-gif{
@@ -166,9 +181,11 @@ img.robot-arm{
 }
 
 .post-info {
+	display: block;
 	margin-top: 5px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 5px;  
+  position:relative;
 }
 
 .post-title {
@@ -199,10 +216,95 @@ img.robot-arm{
 
 aside {
 	float: right;
-	background-color: #FFDC00;
-	width: 100px;
-	padding: 20px;
+	background-color: #AAA;
+	width: 300px;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: right;
+	/*display: grid;*/
+	font-size: 18px;
+  	font-weight: normal;
+  	margin-bottom: 5px;
+  	text-align: center;
+}
+
+img.photo {
+	display: block;
+	width: 200px;
+	border-radius: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+}
+.author-social-icons a {
+	display: inline-block;
+    width: 30px;
+    height: 30px;    
+    /*float: right;*/
+	/*margin: 5px;*/	
+}
+.author-social-icons .linkedin {
+	background: url(imgs/linkedin2.svg)  no-repeat 50% 50%;	
+}
+.author-social-icons .linkedin:hover {
+	background: url(imgs/linkedin.svg)  no-repeat 50% 50%;
+}
+.author-social-icons .facebook {
+	background: url(imgs/facebook2.svg)  no-repeat 50% 50%;
+}
+.author-social-icons .facebook:hover {	
+	background: url(imgs/facebook.svg)  no-repeat 50% 50%;
+}
+
+input[type="submit"] {
+	font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #515151;
+  /*display: block;*/
+  width: 100%;
+}
+
+.tags-block span {
+	background-color: #999;
+	padding: 1px;
+	margin: 1px;
+	display: inline-block;
+	border: 1px solid #666;
+}
+.tags-block span:hover {
+	color: white;
+	background-color: #999;
+}
+.last-comment-block {
+	margin: 5px;
+	font-weight: bold;
+	border: 1px solid #CCC;
+	border-radius: 20px;
+	padding-top: 5px;
+	padding-left: 3px;
+}
+.comment-author-photo {
+	float: left;
+}
+.comment-author-photo img {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px
+}
+.comment-author-name-and-text p {
+	/*float: right;*/
+	/*height: 20px;*/
+	white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+   /* background: #fc0;*/ /* Цвет фона */
+   /* padding: 5px;*/ /* Поля вокруг текста */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+.comment-author-name-and-text p:hover {
+	white-space: normal;
+	/*text-overflow: none;*/
 }
 
 footer {
@@ -231,7 +333,7 @@ ul.nav a {
     width: 10em;
     /*padding:10px;*/
     background-color: rgba(20,20,20,0);/*#f4f4f4*/
-    border: 1px dashed #333;
+    border: 1px solid #333;
     text-decoration: none;
     color: black;/*333*/
     font-weight:bold;
