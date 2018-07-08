@@ -28,6 +28,9 @@ header {
 .logo {
 	float: left;
 }
+.hidden-logo {
+	display: none;
+}
 .burger {
 /*	visibility: hidden;*/
 	display: none;
@@ -399,7 +402,9 @@ ul.nav a:hover{
 	}
 	header {
 		min-width: 500px;
-		position: relative;
+		/*position: relative;
+
+		height: 250px;*/
 	}
 	.burger {
 		display: initial;
@@ -409,8 +414,26 @@ ul.nav a:hover{
 		display: none;
 	}
 	header .logo {
-		position: absolute;
-		bottom: 0px;
+		/*position: absolute;
+		bottom: 0px;*/
 		/*padding-top: 500px;*/
+		display: none;
+	}
+	.nav {
+		display: none;
+	}
+	.search-icon {
+		width: 80px;
+    	height: 80px;
+	}
+	/*.for-hidden-logo {
+		text-align: : center;
+	}*/
+	.hidden-logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5px;
+		margin-bottom: -15px;
 	}
 }
