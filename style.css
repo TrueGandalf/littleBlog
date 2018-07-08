@@ -7,6 +7,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   color: #515151;
+  min-width: 300px;
 }
 
 
@@ -113,18 +114,20 @@ main {
 	background-color: #F0F0F0;
 	width: calc(100% - 300px);
 	padding: 20px;
+	min-width: 400px;
 }
 
 .container {
   /*border: solid 1px red;*/
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 10px;
+  /*grid-auto-columns: minmax(400px, auto);*/
   /*justify-content: center;*/
 }
 
 .post {
-  /*width: 300px;*/
+  min-width: 360px;
   box-shadow: 0 0 9px 3px #dddddd;
   border-radius: 15px;
 }
@@ -344,4 +347,16 @@ ul.nav a {
 ul.nav a:hover{
     background-color: #333;
     color: #f4f4f4;
+}
+
+@media all and (max-width: 735px) {
+	aside {
+		float: left;
+		width: 100%;
+
+	}
+	main {
+		width: 100%;
+		min-width: 500px;
+	}
 }
