@@ -216,7 +216,7 @@ img.robot-arm{
 
 aside {
 	float: right;
-	background-color: #888;
+	background-color: #AAA;
 	width: 220px;
 	padding-top: 30px;
 	padding-left: 10px;
@@ -255,6 +255,15 @@ img.photo {
 }
 .author-social-icons .facebook:hover {	
 	background: url(imgs/facebook.svg)  no-repeat 50% 50%;
+}
+
+input[type="submit"] {
+	font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #515151;
+  /*display: block;*/
+  width: 200px;
 }
 
 footer {
