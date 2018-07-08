@@ -26,8 +26,12 @@ header {
 }
 
 .logo {
-	float: left}
-
+	float: left;
+}
+.burger {
+/*	visibility: hidden;*/
+	display: none;
+}
 .social-icons,
 .search-icons,
 .nav {
@@ -392,5 +396,21 @@ ul.nav a:hover{
 	}
 	footer {
 		min-width: 500px;
+	}
+	header {
+		min-width: 500px;
+		position: relative;
+	}
+	.burger {
+		display: initial;
+		float: left;
+	}
+	.social-icons {
+		display: none;
+	}
+	header .logo {
+		position: absolute;
+		bottom: 0px;
+		/*padding-top: 500px;*/
 	}
 }
