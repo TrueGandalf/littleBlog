@@ -266,6 +266,14 @@ input[type="submit"] {
   width: 200px;
 }
 
+.tags-block span {
+	background-color: #999;
+	padding: 1px;
+	margin: 1px;
+	display: inline-block;
+	border: 1px solid #666;
+}
+
 footer {
 	background-color: #111111;
 	padding: 20px;
@@ -292,7 +300,7 @@ ul.nav a {
     width: 10em;
     /*padding:10px;*/
     background-color: rgba(20,20,20,0);/*#f4f4f4*/
-    border: 1px dashed #333;
+    border: 1px solid #333;
     text-decoration: none;
     color: black;/*333*/
     font-weight:bold;
